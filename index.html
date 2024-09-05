@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Irrigation System for Precision Farming</h1>
+        
+        <form id="irrigation-form">
+            <label for="soil-moisture">Soil Moisture Level (%):</label>
+            <input type="number" id="soil-moisture" name="soilMoisture" min="0" max="100" required>
+
+            <label for="crop-type">Crop Type:</label>
+            <select id="crop-type" name="cropType" required>
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="corn">Corn</option>
+            </select>
+
+            <label for="water-level">Water Level in Field (liters):</label>
+            <input type="number" id="water-level" name="waterLevel" required>
+
+            <label for="weather-condition">Weather Condition:</label>
+            <select id="weather-condition" name="weatherCondition" required>
+                <option value="sunny">Sunny</option>
+                <option value="rainy">Rainy</option>
+                <option value="cloudy">Cloudy</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output">
+            <h2>Output:</h2>
+            <p id="irrigation-needed"></p>
+            <p id="water-required"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
